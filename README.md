@@ -11,5 +11,4 @@
 - Web Development
 
 ## Profiles
-- GitHub: https://github.com/AdeshWardhe
 - Codewars: https://www.codewars.com/users/AdeshWardhe
