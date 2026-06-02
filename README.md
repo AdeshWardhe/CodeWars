@@ -23,3 +23,9 @@
 | Rank | <!--RANK-->6 kyu<!--/RANK--> |
 | Honor | <!--HONOR-->118<!--/HONOR--> |
 | Total Kata Solved | <!--KATA-->30<!--/KATA--> |
+
+
+
+<!--PROGRESS-->
+Loading...
+<!--/PROGRESS-->
