@@ -3,10 +3,38 @@ name: Update CodeWars Stats
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 * * *"
+
 jobs:
-  hello:
+  update:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
-      - name: Hello World
-        run: echo "Workflow is working!"
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Requests
+        run: pip install requests
+
+      - name: Run Script
+        run: python scripts/update_codewars.py
+
+      - name: Commit Changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add README.md
+
+          git commit -m "Update CodeWars Stats" || exit 0
+
+          git push
