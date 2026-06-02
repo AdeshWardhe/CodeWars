@@ -6,25 +6,38 @@ user = requests.get(
     f"https://www.codewars.com/api/v1/users/{USERNAME}"
 ).json()
 
+completed = requests.get(
+    f"https://www.codewars.com/api/v1/users/{USERNAME}/code-challenges/completed?page=0"
+).json()
+
 rank = user["ranks"]["overall"]["name"]
 honor = user["honor"]
+kata = completed["totalItems"]
 
-readme_path = "README.md"
-
-with open(readme_path, "r", encoding="utf-8") as file:
+with open("README.md", "r", encoding="utf-8") as file:
     content = file.read()
 
-content = content.replace(
-    "<!--RANK-->Loading...<!--/RANK-->",
-    f"<!--RANK-->{rank}<!--/RANK-->"
+import re
+
+content = re.sub(
+    r'<!--RANK-->.*?<!--/RANK-->',
+    f'<!--RANK-->{rank}<!--/RANK-->',
+    content
 )
 
-content = content.replace(
-    "<!--HONOR-->Loading...<!--/HONOR-->",
-    f"<!--HONOR-->{honor}<!--/HONOR-->"
+content = re.sub(
+    r'<!--HONOR-->.*?<!--/HONOR-->',
+    f'<!--HONOR-->{honor}<!--/HONOR-->',
+    content
 )
 
-with open(readme_path, "w", encoding="utf-8") as file:
+content = re.sub(
+    r'<!--KATA-->.*?<!--/KATA-->',
+    f'<!--KATA-->{kata}<!--/KATA-->',
+    content
+)
+
+with open("README.md", "w", encoding="utf-8") as file:
     file.write(content)
 
-print("README updated successfully")
+print("Updated!")
