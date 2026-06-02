@@ -12,3 +12,13 @@
 
 ## Profiles
 - Codewars: https://www.codewars.com/users/AdeshWardhe
+
+
+
+
+## 🏆 CodeWars Stats
+
+| Metric | Value |
+|---------|---------|
+| Rank | <!--RANK-->Loading...<!--/RANK--> |
+| Honor | <!--HONOR-->Loading...<!--/HONOR--> |
