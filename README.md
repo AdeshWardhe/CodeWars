@@ -20,5 +20,6 @@
 
 | Metric | Value |
 |---------|---------|
-| Rank | <!--RANK-->6 kyu<!--/RANK--> |
-| Honor | <!--HONOR-->118<!--/HONOR--> |
+| Rank | <!--RANK-->Loading...<!--/RANK--> |
+| Honor | <!--HONOR-->Loading...<!--/HONOR--> |
+| Total Kata Solved | <!--KATA-->Loading...<!--/KATA--> |
