@@ -27,5 +27,5 @@
 
 
 <!--PROGRESS-->
-Loading...
+🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜ 30%
 <!--/PROGRESS-->
