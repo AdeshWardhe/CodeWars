@@ -20,5 +20,5 @@
 
 | Metric | Value |
 |---------|---------|
-| Rank | <!--RANK-->Loading...<!--/RANK--> |
-| Honor | <!--HONOR-->Loading...<!--/HONOR--> |
+| Rank | <!--RANK-->6 kyu<!--/RANK--> |
+| Honor | <!--HONOR-->118<!--/HONOR--> |
