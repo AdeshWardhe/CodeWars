@@ -21,11 +21,11 @@
 | Metric | Value |
 |---------|---------|
 | Rank | <!--RANK-->6 kyu<!--/RANK--> |
-| Honor | <!--HONOR-->148<!--/HONOR--> |
-| Total Kata Solved | <!--KATA-->42<!--/KATA--> |
+| Honor | <!--HONOR-->160<!--/HONOR--> |
+| Total Kata Solved | <!--KATA-->45<!--/KATA--> |
 
 
 
 <!--PROGRESS-->
-🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜ 42%
+🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜ 45%
 <!--/PROGRESS-->
